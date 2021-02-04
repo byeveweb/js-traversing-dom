@@ -1,0 +1,93 @@
+.nav {
+    background-color: #041C2C;
+    display: block;
+    width: 70px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.nav .logo {
+    height: 70px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.nav .close {
+    height: 70px;
+    padding: 1rem;
+    text-align: right;
+}
+
+.nav .logo img {
+    width: 70%;
+}
+
+.nav .menu {
+    display: block;
+    text-align: center;
+}
+
+.nav .link i {
+    font-size: 30px;
+    color: #7CAAD6;
+    /* padding: 0; */
+}
+
+.nav .link a {
+    z-index: 999999999999;
+    /* background-color: red; */
+    padding: 1rem;
+}
+
+.nav .menu-default-state .link a:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all .5s ease;
+}
+
+.nav .menu-default-state .link a.hovernav:after {
+    content: "";
+    width: 500%;
+    z-index: 1;
+}
+
+
+/* Drop State */
+
+.nav .menu-drop-state {
+    height: 100vh;
+    width: 230px;
+    position: absolute;
+    top: 0;
+    left: 70px;
+    background-color: #041C2C;
+    color: #7CAAD6;
+}
+
+.nav .menu-default-state .link,
+.nav .menu-drop-state .link {
+    text-align: left;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 70px;
+}
+
+.nav .link .active.icon-arrow_left {
+    position: absolute;
+    right: -11px;
+}
+
+
+/* Events */
+
+.nav .link.active {
+    background-color: #fff;
+}

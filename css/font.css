@@ -1,0 +1,19 @@
+@import url('../fonts/fonts.css');
+
+/* Tipo de Fuente */
+
+h1,
+h2 {
+    font-family: "verdanabold";
+}
+
+h3,
+h4 {
+    font-family: "verdanaregular";
+}
+
+h5,
+h6 {
+    font-family: 'Montserrat';
+    font-weight: 300;
+}
